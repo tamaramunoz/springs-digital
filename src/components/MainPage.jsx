@@ -1,13 +1,11 @@
 import React from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import { useSelector } from 'react-redux'
 
 
 const MainPage = () => {
 
-    const dispatch = useDispatch()
-
     const readingIndicators = useSelector(store => store.financialIndicators.array)
-    console.log(readingIndicators)
+    // console.log(readingIndicators)
 
     return (
         <div className="container">            

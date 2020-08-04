@@ -23,7 +23,7 @@ export default function indicatorReducer(state = inicialData, action){
 export const getFinancialIndicatorAction = (type) => async(dispatch, getState) => {
 
     const kindIndicator = type
-    console.log(kindIndicator)
+    // console.log(kindIndicator)
 
     try {
         const res = await axios.get(`https://mindicador.cl/api/${kindIndicator}`)
