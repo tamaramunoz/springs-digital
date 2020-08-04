@@ -15,4 +15,4 @@ This challenge is for the company Springs Digital, and consist in show different
 - Tamara Muñoz
 
 ## Deploy: 
-- 
+- https://financial-indicators.web.app/
