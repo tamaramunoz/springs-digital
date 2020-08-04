@@ -6,7 +6,7 @@ This challenge is for the company Springs Digital, and consist in show different
 ## Stack: 
 - React Hooks
 - Redux Ducks
-- Boostrap
+- Bootstrap
 - API: https://www.mindicador.cl/
 
 ## Developed by:
