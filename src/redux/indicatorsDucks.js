@@ -10,6 +10,13 @@ const inicialData = {
 const GET_INDICATOR_SUCCESS = 'GET_INDICATOR_SUCCESS'
 
 // reducer
-
+export default function indicatorReducer(state = inicialData, action){
+    switch(action.type){
+        case GET_INDICATOR_SUCCESS:
+            return {...state, ...action.payload}
+        default: 
+            return state
+    }
+}
 
 // action creators

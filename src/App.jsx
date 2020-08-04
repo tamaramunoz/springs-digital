@@ -1,12 +1,17 @@
 import React from 'react'
 import Navbar from './components/Navbar'
 
+import {Provider} from 'react-redux'
+import generateStore from './redux/store'
+
 const App = () => {
+
+  const store = generateStore()
+
   return (
-    <div>
+    <Provider store={store}>
       <Navbar />
-      <h1>hello react</h1>
-    </div>
+    </Provider>
   )
 }
 
