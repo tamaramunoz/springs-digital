@@ -1,17 +1,15 @@
 import React from 'react'
-import Navbar from './components/Navbar'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
-import {Provider} from 'react-redux'
-import generateStore from './redux/store'
+// components
+import Navbar from './components/Navbar'
 
 const App = () => {
 
-  const store = generateStore()
-
   return (
-    <Provider store={store}>
+    <div className="m-3">
       <Navbar />
-    </Provider>
+    </div>
   )
 }
 
