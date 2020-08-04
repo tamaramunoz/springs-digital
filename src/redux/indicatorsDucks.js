@@ -20,3 +20,7 @@ export default function indicatorReducer(state = inicialData, action){
 }
 
 // action creators
+export const getFinancialIndicatorAction = (type) => async(dispatch, getState) => {
+
+   
+}

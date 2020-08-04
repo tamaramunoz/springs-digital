@@ -1,8 +1,6 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
-// components
-import Navbar from './Navbar'
 
 const MainPage = () => {
 
@@ -12,9 +10,7 @@ const MainPage = () => {
     console.log(readingIndicators)
 
     return (
-        <div className="container">
-            <Navbar />
-            
+        <div className="container">            
             <ul>
                 {
                     readingIndicators.map((item, index) => (
