@@ -2,10 +2,11 @@ import React from 'react'
 
 // styles
 import logo from '../images/logoIndicators.png'
+import '../styles/Home.css'
 
 const Home = () => {
     return (
-        <div>
+        <div className="home-container">
             <img src={logo} alt=""/>
             <h1>Bienvenidos a Indicadores Financieros</h1>
 
