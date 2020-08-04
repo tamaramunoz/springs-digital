@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 
 const Navbar = () => {
@@ -6,21 +7,21 @@ const Navbar = () => {
     return (
         <div className="mt-3">
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a className="navbar-brand" href="/">Financial Indicators</a>
+                <Link className="navbar-brand" to="/">Financial Indicators</Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div className="navbar-nav">
-                        <button className="btn btn-dark" >Libra</button>
-                        <button className="btn btn-dark" >Desempleo</button>
-                        <button className="btn btn-dark" >Imacec</button>
-                        <button className="btn btn-dark" >Euro</button>
-                        <button className="btn btn-dark" >Dólar Observado</button>
-                        <button className="btn btn-dark" >Dólar Acuerdo</button>
-                        <button className="btn btn-dark" >Unidad Fomento</button>
-                        <button className="btn btn-dark" >Unidad Tributaria</button>
-                        <button className="btn btn-dark" >Bitcoin</button>
+                        <Link className="btn btn-dark" to="/indicators">Libra</Link>
+                        <Link className="btn btn-dark" to="/indicators">Desempleo</Link>
+                        <Link className="btn btn-dark" to="/indicators">Imacec</Link>
+                        <Link className="btn btn-dark" to="/indicators">Euro</Link>
+                        <Link className="btn btn-dark" to="/indicators">Dólar Observado</Link>
+                        <Link className="btn btn-dark" to="/indicators">Dólar Acuerdo</Link>
+                        <Link className="btn btn-dark" to="/indicators">Unidad Fomento</Link>
+                        <Link className="btn btn-dark" to="/indicators">Unidad Tributaria</Link>
+                        <Link className="btn btn-dark" to="/indicators">Bitcoin</Link>
                     </div>
                 </div>
             </nav>
