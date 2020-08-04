@@ -8,14 +8,17 @@ const MainPage = () => {
     // console.log(readingIndicators)
 
     return (
-        <div className="container">            
-            <ul>
+        <div className="container mt-3">
                 {
                     readingIndicators.map((item, index) => (
-                        <li key={index}> {item.fecha.slice(0,10)} | {item.valor} </li> 
+                        <div className="card border-success mb-3" key={index}>
+                            <div className="card-body text-success">
+                                <h5 className="card-title">Valor: {item.valor}</h5>
+                                <p className="card-text">Fecha: {item.fecha.slice(0, 10)} </p>
+                            </div>
+                        </div>
                     ))
                 }
-            </ul>
         </div>
     )
 }

@@ -3,6 +3,36 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     color: #237034;
     font-family: 'Source Sans Pro', sans-serif;
+}
+
+.main-title-home {
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+
+.subtitle-home {
+    margin-bottom: 40px;
+}
+
+.description-home {
+    width: 60%;
+    font-size: 16px;
+}
+
+/* Responsive */
+@media all and (max-width: 500px) {
+    .main-title-home {
+        font-size: 20px;
+    }
+    
+    .subtitle-home {
+        font-size: 14px;
+    }
+    
+    .description-home {
+        font-size: 12px;
+    }
 }

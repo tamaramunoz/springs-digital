@@ -27,6 +27,7 @@ export const getFinancialIndicatorAction = (type) => async(dispatch, getState) =
 
     try {
         const res = await axios.get(`https://mindicador.cl/api/${kindIndicator}`)
+        console.log(res.data)
         dispatch({
             type: GET_INDICATOR_SUCCESS,
             payload: {
